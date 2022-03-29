@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function Counter({ num, func, name }) {
   return (
@@ -35,4 +36,10 @@ const reset = {
   width: "120px",
   borderRadius: "15px",
   border: "3px dashed green",
+};
+
+Counter.propTypes = {
+  num: PropTypes.number.isRequired,
+  func: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
 };
