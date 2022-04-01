@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export default function Counter({ num, func, name }) {
   return (
-    <div>
+    <div style={container}>
       <button
         style={name === "ADD" ? add : name === "SUB" ? subtract : reset}
         onClick={() => func(num)}
@@ -13,6 +13,11 @@ export default function Counter({ num, func, name }) {
     </div>
   );
 }
+
+const container = {
+  display: "flex",
+  flexDirection: "row",
+};
 
 const add = {
   margin: "3px",

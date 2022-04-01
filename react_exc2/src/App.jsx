@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 import Counter from "./components/Counter";
 import ChuckNorris from "./components/ChuckNorris";
 import DadJokes from "./components/DadJokes";
